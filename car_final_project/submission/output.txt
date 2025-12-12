@@ -1,0 +1,5 @@
+Room visit order: ['C', 'B', 'A', 'O']
+Time taken: 58.97383952140808
+Cathy's life:170
+Efficiency:2.8826340862254414
+Is Cathy alive?:False

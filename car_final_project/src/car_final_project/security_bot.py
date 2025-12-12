@@ -112,7 +112,16 @@ class SecurityBot:
 
         goal_reached = False
         """BEGIN SOLUTION"""
+        current_x = self.current_car_pose.position.x
+        current_y = self.current_car_pose.position.y
+        current_theta = utils_cs.quaternion_to_angle(self.current_car_pose.orientation)
 
+        goal_x = self.current_goal.position.x
+        goal_y = self.current_goal.position.y
+        goal_theta = utils_cs.quaternion_to_angle(self.current_goal.orientation)
+        
+        dist = np.linalg.norm([current_x - goal_x, current_y - goal_y])
+        theta_diff = abs(current_theta - goal_theta)
         """END SOLUTION"""
         if theta_diff >= 1:
             return False
