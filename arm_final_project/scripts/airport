@@ -97,7 +97,8 @@ if __name__ == "__main__":
         env.publish_obj()
 
         ###### BEGIN SOLUTION, PICKUP and DROPOFF TRAY #######
-        airport.plan_and_execute("pickup_tray")
+        tray_position = np.mean(airport.planning_context.package_location_y)
+        airport.plan_and_execute("pickup_tray", detected_goal=tray_position)
         airport.plan_and_execute("dropoff_tray")
         ###### END SOLUTION #######
   
