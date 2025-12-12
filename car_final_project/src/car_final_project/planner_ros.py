@@ -130,7 +130,7 @@ class PlannerROSWithControl(PlannerROS):
             pose_stamped.pose = utils.particle_to_pose(state)
             path_msg.poses.append(pose_stamped)
         
-        controller_result = self.controller(path_msg, 2.0)
+        controller_result = self.controller(path_msg, 3.0)
         return controller_result
         """END SOLUTION"""
 
