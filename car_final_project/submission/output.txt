@@ -1,5 +1,5 @@
-Room visit order: ['A', 'B', 'A', 'O']
-Time taken: 43.01354098320007
-Cathy's life:200
-Efficiency:4.649698569994844
+Room visit order: ['A', 'C', 'A', 'O']
+Time taken: 44.50948715209961
+Cathy's life:220
+Efficiency:4.942766454446153
 Is Cathy alive?:True
